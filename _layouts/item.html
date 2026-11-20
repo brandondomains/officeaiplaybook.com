@@ -15,7 +15,8 @@
               <div class="sidebar-label">Prompt Library</div>
               <a class="sidebar-link" href="{{ '/library/' | relative_url }}"><span>All items</span><span class="soft-pill">Index</span></a>
               <a class="sidebar-link" href="{{ '/' | relative_url }}"><span>Dashboard</span><span class="soft-pill">Home</span></a>
-              <a class="sidebar-link" href="{{ '/playbook/' | relative_url }}"><span>Playbooks</span><span class="soft-pill">Guide</span></a>
+              <a class="sidebar-link" href="{{ '/playbook/' | relative_url }}"><span>Playbooks</span><span class="soft-pill">Guides</span></a>
+              <a class="sidebar-link" href="{{ '/library/starter-pack/' | relative_url }}"><span>Starter Pack</span><span class="soft-pill">Bundle</span></a>
             </div>
             <div class="sidebar-note">
               <strong>Calm rule</strong>
@@ -38,17 +39,17 @@
               <h1 class="page-title">{{ page.title }}</h1>
               {% if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif %}
               <div class="d-flex flex-wrap gap-2 mt-3">
-                {% if page.time %}<span class="soft-pill">{{ page.time }}</span>{% endif %}
+                {% if page.time %}<span class="soft-pill"><i class="bi bi-clock me-1"></i>{{ page.time }}</span>{% endif %}
                 {% if page.level %}<span class="soft-pill">{{ page.level }}</span>{% endif %}
                 {% if page.tag %}<span class="soft-pill">{{ page.tag }}</span>{% endif %}
               </div>
             </div>
 
             <article class="prose-content">
-              {{ content | markdownify }}
+              {{ content }}
             </article>
 
-            <div class="d-flex flex-wrap gap-3 mt-4 pt-2">
+            <div class="d-flex flex-wrap gap-3 mt-4 pt-3 border-top">
               <a class="btn btn-outline-primary rounded-pill px-4" href="{{ '/library/' | relative_url }}">Back to library</a>
               <a class="btn btn-primary rounded-pill px-4" href="{{ '/' | relative_url }}">Return to dashboard</a>
             </div>

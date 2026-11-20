@@ -6,34 +6,43 @@ category: Writing
 tag: Prompt
 level: Beginner
 time: 5–10 min
+related:
+  - label: Redaction checklist
+    tag: Policy
+    url: /library/redaction-checklist/
+  - label: Weekly status update
+    tag: Operations
+    url: /library/status-update/
+  - label: Policy & jargon translator
+    tag: Writing
+    url: /library/policy-translator/
 ---
 
 ## When to use
-Use this when you already have a draft email but want it clearer, calmer, and more professional without changing the facts.
+Use this when you already have a rough draft email but want it clearer, calmer, and easier to scan without changing the facts or commitments.
 
 ## Prompt
-Paste your draft (or a sanitized excerpt) and request two versions: one concise and one detailed.
+Paste your sanitized draft and request two calibrated versions: one concise and one slightly more detailed.
 
-### Copy/paste
-```
-You are helping me rewrite an email.
+```text
+You are helping me rewrite a workplace email.
 
 Goal:
-- Make it warm-professional and clear.
-- Preserve all facts and intent (do not add new information).
+- Make it warm-professional, calm, and clear.
+- Preserve all facts, dates, numbers, and intent (do not add new information).
 - Reduce ambiguity and remove emotionally loaded wording.
-- Keep it short unless detail is necessary.
+- Keep it concise unless detail is necessary.
 
 Output:
-1) Concise version (best default)
-2) Detailed version (adds context where helpful)
+1) Concise version (best default, 3–5 sentences)
+2) Detailed version (adds structured bullets if helpful)
 3) Any unclear points or missing info as questions (bullets)
 
-Here is my draft:
+Here is my sanitized draft:
 [PASTE EMAIL HERE]
 ```
 
 ## Quality checks
 - Confirm names, dates, numbers, and commitments remain unchanged.
-- Ensure the rewritten version does not introduce new claims.
-- If anything is uncertain, ask a question instead of guessing.
+- Ensure the rewritten version does not introduce new promises.
+- Re-insert personal names or links locally in your email client before sending.

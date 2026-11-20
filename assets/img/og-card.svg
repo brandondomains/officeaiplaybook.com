@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="65%" stop-color="#EFF6FF"/>
+      <stop offset="100%" stop-color="#DBEAFE"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="96" y1="96" x2="176" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="55%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <circle cx="1060" cy="110" r="240" fill="#2563EB" fill-opacity="0.06"/>
+  <circle cx="1020" cy="540" r="280" fill="#0EA5E9" fill-opacity="0.08"/>
+  <rect x="64" y="64" width="1072" height="502" rx="36" fill="#FFFFFF" fill-opacity="0.92" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="112" y="116" width="84" height="84" rx="22" fill="url(#badgeGrad)"/>
+  <path d="M132 142C132 139.8 133.8 138 136 138H150C152.2 138 154 139.8 154 142V176C154 174.3 152.7 173 151 173H136C133.8 173 132 171.2 132 169V142Z" fill="#FFFFFF"/>
+  <path d="M176 142C176 139.8 174.2 138 172 138H158C155.8 138 154 139.8 154 142V176C154 174.3 155.3 173 157 173H172C174.2 173 176 171.2 176 169V142Z" fill="#E0F2FE"/>
+  <text x="220" y="152" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#2563EB">OFFICEAIPLAYBOOK.COM</text>
+  <text x="220" y="186" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#64748B">Human review first • Privacy-aware workflows</text>
+  <text x="112" y="286" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="64" font-weight="800" fill="#0F172A">Office AI Playbook</text>
+  <text x="112" y="352" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" font-weight="400" fill="#475569">Calm, repeatable playbooks, copy-ready prompts, and safe-use</text>
+  <text x="112" y="394" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" font-weight="400" fill="#475569">templates built for everyday office work.</text>
+  <rect x="112" y="454" width="220" height="52" rx="26" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="222" y="487" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#1D4ED8">Step-by-step Guides</text>
+  <rect x="350" y="454" width="210" height="52" rx="26" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1.5"/>
+  <text x="455" y="487" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#0369A1">Prompt Library</text>
+  <rect x="578" y="454" width="240" height="52" rx="26" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="698" y="487" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#334155">Redaction Checklists</text>
+</svg>

@@ -1,62 +1,33 @@
 ---
 title: Dashboard
-description: A calm dashboard for learning AI at work.
+description: A calm, handbook-style dashboard of repeatable AI playbooks, copy-ready prompts, and privacy-first templates for office work.
 layout: default
 ---
 
 <main class="dashboard-shell py-4 py-lg-5">
   <div class="container-xxl">
-    <div class="offcanvas offcanvas-start sidebar-offcanvas" tabindex="-1" id="siteSidebar" aria-labelledby="siteSidebarLabel">
-      <div class="offcanvas-header border-bottom">
-        <h2 class="offcanvas-title h5 mb-0" id="siteSidebarLabel">Office AI Playbook</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body p-0">
-        <div class="sidebar-panel border-0 shadow-none rounded-0 h-100">
-          <div class="sidebar-section">
-            <div class="sidebar-label">Workspace</div>
-            <a class="sidebar-link active" href="{{ '/' | relative_url }}"><span>Dashboard</span><span class="soft-pill">Home</span></a>
-            <a class="sidebar-link" href="{{ '/playbook/' | relative_url }}"><span>Playbooks</span><span class="soft-pill">Guides</span></a>
-            <a class="sidebar-link" href="{{ '/library/' | relative_url }}"><span>Prompt Library</span><span class="soft-pill">Tools</span></a>
-            <a class="sidebar-link" href="{{ '/library/starter-pack/' | relative_url }}"><span>Starter Pack</span><span class="soft-pill">Bundle</span></a>
-          </div>
-
-          <div class="sidebar-section">
-            <div class="sidebar-label">Start here</div>
-            <a class="sidebar-link" href="{{ '/playbook/01-5-minute-daily-setup/' | relative_url }}"><span>5-minute daily setup</span><span class="soft-pill">Daily</span></a>
-            <a class="sidebar-link" href="{{ '/library/redaction-checklist/' | relative_url }}"><span>Redaction checklist</span><span class="soft-pill">Policy</span></a>
-            <a class="sidebar-link" href="{{ '/library/email-rewrite/' | relative_url }}"><span>Email rewrite prompt</span><span class="soft-pill">Writing</span></a>
-          </div>
-
-          <div class="sidebar-note">
-            <strong>Calm rule</strong>
-            <p class="mb-0">Never paste confidential or identifying information into AI tools. Work from summaries, placeholders, and human review.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="row g-4 align-items-start">
       <div class="col-lg-3 col-xl-3">
         <aside class="sidebar-panel d-none d-lg-block position-sticky top-offset">
           <div class="sidebar-section">
             <div class="sidebar-label">Workspace</div>
             <a class="sidebar-link active" href="{{ '/' | relative_url }}"><span>Dashboard</span><span class="soft-pill">Home</span></a>
-            <a class="sidebar-link" href="{{ '/playbook/' | relative_url }}"><span>Playbooks</span><span class="soft-pill">Guides</span></a>
-            <a class="sidebar-link" href="{{ '/library/' | relative_url }}"><span>Prompt Library</span><span class="soft-pill">Tools</span></a>
+            <a class="sidebar-link" href="{{ '/playbook/' | relative_url }}"><span>Playbooks</span><span class="soft-pill">4 Guides</span></a>
+            <a class="sidebar-link" href="{{ '/library/' | relative_url }}"><span>Prompt Library</span><span class="soft-pill">9 Tools</span></a>
             <a class="sidebar-link" href="{{ '/library/starter-pack/' | relative_url }}"><span>Starter Pack</span><span class="soft-pill">Bundle</span></a>
           </div>
 
           <div class="sidebar-section">
             <div class="sidebar-label">Start here</div>
-            <a class="sidebar-link" href="{{ '/playbook/01-5-minute-daily-setup/' | relative_url }}"><span>5-minute daily setup</span><span class="soft-pill">Daily</span></a>
+            <a class="sidebar-link" href="{{ '/playbook/01-5-minute-daily-setup/' | relative_url }}"><span>5-minute daily setup</span><span class="soft-pill">Ep. 1</span></a>
             <a class="sidebar-link" href="{{ '/library/redaction-checklist/' | relative_url }}"><span>Redaction checklist</span><span class="soft-pill">Policy</span></a>
             <a class="sidebar-link" href="{{ '/library/email-rewrite/' | relative_url }}"><span>Email rewrite prompt</span><span class="soft-pill">Writing</span></a>
+            <a class="sidebar-link" href="{{ '/library/meeting-minutes/' | relative_url }}"><span>Meeting minutes</span><span class="soft-pill">Meetings</span></a>
           </div>
 
           <div class="sidebar-note">
             <strong>Calm rule</strong>
-            <p class="mb-0">Think of AI as a drafting and organizing assistant, not an autopilot. Keep judgement, approvals, and privacy with you.</p>
+            <p class="mb-0">Treat AI as a drafting and organizing assistant, not an autopilot. Keep judgement, approvals, and sensitive data with you.</p>
           </div>
         </aside>
       </div>
@@ -65,28 +36,28 @@ layout: default
         <section class="hero-card mb-4">
           <div class="row g-4 align-items-center">
             <div class="col-xl-8">
-              <span class="hero-kicker">Office AI Playbook</span>
-              <h1 class="hero-title">A calm dashboard for learning and using AI at work.</h1>
-              <p class="hero-text">Explore repeatable playbooks, practical prompts, and office-safe workflows designed to reduce friction without losing judgement, clarity, or privacy discipline.</p>
+              <span class="hero-kicker">Office AI Playbook • officeaiplaybook.com</span>
+              <h1 class="hero-title">A calm handbook for practical AI at work.</h1>
+              <p class="hero-text">Repeatable workflows, copy-ready prompts, and privacy-first guardrails designed to save time on everyday office tasks—without sacrificing accuracy, tone, or human judgement.</p>
               <div class="d-flex flex-wrap gap-2 mt-4">
-                <a class="btn btn-primary rounded-pill px-4" href="{{ '/playbook/' | relative_url }}">Browse playbooks</a>
-                <a class="btn btn-outline-primary rounded-pill px-4" href="{{ '/library/' | relative_url }}">Open prompt library</a>
-                <span class="soft-pill soft-pill-lg">Search-first workflow</span>
+                <a class="btn btn-primary rounded-pill px-4" href="{{ '/playbook/' | relative_url }}">Explore playbooks</a>
+                <a class="btn btn-outline-primary rounded-pill px-4" href="{{ '/library/' | relative_url }}">Browse prompt library</a>
+                <a class="btn btn-outline-primary rounded-pill px-4" href="{{ '/library/starter-pack/' | relative_url }}">Get starter pack</a>
               </div>
             </div>
             <div class="col-xl-4">
               <div class="hero-metrics">
                 <div class="metric-card">
-                  <span class="metric-label">Core areas</span>
-                  <strong>Playbooks, prompts, templates</strong>
+                  <span class="metric-label">What's inside</span>
+                  <strong>4 complete playbooks &amp; 9 copy-ready tools</strong>
                 </div>
                 <div class="metric-card">
-                  <span class="metric-label">Focus</span>
-                  <strong>Responsible AI for everyday office work</strong>
+                  <span class="metric-label">Operating standard</span>
+                  <strong>Sanitize inputs first, verify outputs always</strong>
                 </div>
                 <div class="metric-card">
-                  <span class="metric-label">Best for</span>
-                  <strong>Writers, managers, analysts, coordinators</strong>
+                  <span class="metric-label">Built for</span>
+                  <strong>Coordinators, analysts, managers &amp; writers</strong>
                 </div>
               </div>
             </div>
@@ -97,35 +68,43 @@ layout: default
           <div class="section-head">
             <div>
               <h2>Start with a workflow</h2>
-              <p>Use playbooks when you want a repeatable way to get better results from AI.</p>
+              <p>Step-by-step operating guides for recurring office routines.</p>
             </div>
-            <a href="{{ '/playbook/' | relative_url }}" class="section-link">View all playbooks</a>
+            <a href="{{ '/playbook/' | relative_url }}" class="section-link">View all 4 playbooks <i class="bi bi-arrow-right"></i></a>
           </div>
 
           <div class="row g-3 searchable-grid">
-            <div class="col-md-6 col-xl-4 searchable-item" data-search="daily setup prioritization planning workflow meetings email office-safe morning routine">
+            <div class="col-md-6 searchable-item" data-search="daily setup prioritization planning workflow meetings email office-safe morning routine episode 1">
               <a class="dashboard-card card-playbook" href="{{ '/playbook/01-5-minute-daily-setup/' | relative_url }}">
-                <span class="card-tag">Playbook</span>
+                <span class="card-tag">Episode 01</span>
                 <h3>The 5-Minute Daily Setup</h3>
-                <p>Start the day with priorities, risk awareness, and draft-ready templates instead of reacting from scratch.</p>
-                <div class="card-meta"><span>4 to 6 min</span><span>Daily workflow</span></div>
+                <p>Start the morning with clear priorities, risk awareness, and draft-ready templates instead of reacting from scratch.</p>
+                <div class="card-meta"><span>5 min</span><span>Daily workflow</span></div>
               </a>
             </div>
-            <div class="col-md-6 col-xl-4 searchable-item" data-search="writing reports status updates drafts workflow">
-              <div class="dashboard-card muted-card">
-                <span class="card-tag">Coming next</span>
-                <h3>Email faster, still human</h3>
-                <p>A practical workflow for drafting replies, preserving context, and reviewing tone before sending.</p>
-                <div class="card-meta"><span>Episode 2</span><span>Writing</span></div>
-              </div>
+            <div class="col-md-6 searchable-item" data-search="email faster still human writing replies tone difficult threads follow-up episode 2">
+              <a class="dashboard-card card-playbook" href="{{ '/playbook/02-email-faster-still-human/' | relative_url }}">
+                <span class="card-tag">Episode 02</span>
+                <h3>Email Faster, Still Human</h3>
+                <p>A three-pass method for drafting clear replies, navigating tense threads, and keeping your own voice intact.</p>
+                <div class="card-meta"><span>6 min</span><span>Writing &amp; comms</span></div>
+              </a>
             </div>
-            <div class="col-md-6 col-xl-4 searchable-item" data-search="research summaries meeting prep office ai playbook">
-              <div class="dashboard-card muted-card">
-                <span class="card-tag">Direction</span>
-                <h3>Meeting prep and summaries</h3>
-                <p>Future workflows for agendas, notes, decisions, action items, and safe recap generation.</p>
-                <div class="card-meta"><span>Planned</span><span>Meetings</span></div>
-              </div>
+            <div class="col-md-6 searchable-item" data-search="meeting prep and summaries agendas notes decisions action items recap episode 3">
+              <a class="dashboard-card card-playbook" href="{{ '/playbook/03-meeting-prep-and-summaries/' | relative_url }}">
+                <span class="card-tag">Episode 03</span>
+                <h3>Meeting Prep &amp; Clean Summaries</h3>
+                <p>Turn messy notes into decision-focused minutes with clear owners, deadlines, and zero fabricated details.</p>
+                <div class="card-meta"><span>7 min</span><span>Meetings</span></div>
+              </a>
+            </div>
+            <div class="col-md-6 searchable-item" data-search="turning notes into reports briefing memo structure outline synthesis episode 4">
+              <a class="dashboard-card card-playbook" href="{{ '/playbook/04-turning-notes-into-reports/' | relative_url }}">
+                <span class="card-tag">Episode 04</span>
+                <h3>Turning Scattered Notes into Reports</h3>
+                <p>Move from raw research and bullet dumps to a structured briefing note without letting AI invent claims.</p>
+                <div class="card-meta"><span>8 min</span><span>Analysis &amp; reports</span></div>
+              </a>
             </div>
           </div>
         </section>
@@ -133,10 +112,10 @@ layout: default
         <section class="dashboard-block mb-4" data-search-group>
           <div class="section-head">
             <div>
-              <h2>Prompt library</h2>
-              <p>Open a prompt, adapt it to your context, and review the output before using it in real work.</p>
+              <h2>Prompt &amp; template library</h2>
+              <p>Open any tool for copy-ready prompts, boundaries, and quality checks.</p>
             </div>
-            <a href="{{ '/library/' | relative_url }}" class="section-link">Browse the library</a>
+            <a href="{{ '/library/' | relative_url }}" class="section-link">Browse all 9 tools <i class="bi bi-arrow-right"></i></a>
           </div>
 
           <div class="row g-3 searchable-grid">
@@ -145,7 +124,7 @@ layout: default
                 <span class="card-tag">Prompt</span>
                 <h3>Email rewrite</h3>
                 <p>Improve clarity and tone without drifting from the original facts, commitments, or intent.</p>
-                <div class="card-meta"><span>Writing</span><span>Beginner</span></div>
+                <div class="card-meta"><span>Writing</span><span>Core</span></div>
               </a>
             </div>
             <div class="col-md-6 col-xl-4 searchable-item" data-search="meeting minutes template actions decisions follow-up notes">
@@ -153,39 +132,63 @@ layout: default
                 <span class="card-tag">Template</span>
                 <h3>Meeting minutes</h3>
                 <p>Turn rough notes into structured minutes with decisions, owners, deadlines, and open questions.</p>
-                <div class="card-meta"><span>Meetings</span><span>Reusable</span></div>
+                <div class="card-meta"><span>Meetings</span><span>Core</span></div>
               </a>
             </div>
             <div class="col-md-6 col-xl-4 searchable-item" data-search="privacy redaction checklist policy safe use confidential data">
               <a class="dashboard-card card-library" href="{{ '/library/redaction-checklist/' | relative_url }}">
                 <span class="card-tag">Guide</span>
                 <h3>Redaction checklist</h3>
-                <p>Know what not to paste into AI tools and how to summarize sensitive material more safely.</p>
-                <div class="card-meta"><span>Policy-safe</span><span>Core item</span></div>
+                <p>Know what not to paste into AI tools and how to strip identifiers before summarizing text.</p>
+                <div class="card-meta"><span>Policy-safe</span><span>Core</span></div>
               </a>
             </div>
             <div class="col-md-6 col-xl-4 searchable-item" data-search="safe summary documents policy privacy workflow">
               <a class="dashboard-card card-library" href="{{ '/library/safe-summary/' | relative_url }}">
                 <span class="card-tag">Workflow</span>
                 <h3>Safe summary</h3>
-                <p>Create structured summaries while keeping confidential details abstracted and controlled.</p>
-                <div class="card-meta"><span>Documents</span><span>Risk-aware</span></div>
+                <p>Create structured summaries while keeping confidential details abstracted and verified.</p>
+                <div class="card-meta"><span>Policy-safe</span><span>Risk-aware</span></div>
               </a>
             </div>
-            <div class="col-md-6 col-xl-4 searchable-item" data-search="decision record template analysis rationale">
+            <div class="col-md-6 col-xl-4 searchable-item" data-search="decision record template analysis rationale tradeoffs">
               <a class="dashboard-card card-library" href="{{ '/library/decision-record/' | relative_url }}">
                 <span class="card-tag">Template</span>
                 <h3>Decision record</h3>
-                <p>Capture context, options, reasoning, and decisions so future reviews stay readable.</p>
+                <p>Capture context, options, tradeoffs, and reasoning so future reviews stay clear.</p>
                 <div class="card-meta"><span>Analysis</span><span>Documentation</span></div>
               </a>
             </div>
-            <div class="col-md-6 col-xl-4 searchable-item" data-search="report outline writing structure planning">
+            <div class="col-md-6 col-xl-4 searchable-item" data-search="report outline writing structure planning briefing">
               <a class="dashboard-card card-library" href="{{ '/library/report-outline/' | relative_url }}">
                 <span class="card-tag">Workflow</span>
                 <h3>Report outline generator</h3>
-                <p>Turn notes and themes into a clear report structure before writing the first full draft.</p>
+                <p>Turn rough notes and themes into a logical report structure before writing the draft.</p>
                 <div class="card-meta"><span>Writing</span><span>Structure</span></div>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4 searchable-item" data-search="weekly status update progress blockers stakeholder communication">
+              <a class="dashboard-card card-library" href="{{ '/library/status-update/' | relative_url }}">
+                <span class="card-tag">Prompt</span>
+                <h3>Weekly status update</h3>
+                <p>Synthesize task logs into a concise progress, risks, and next-steps update for leads.</p>
+                <div class="card-meta"><span>Operations</span><span>Reusable</span></div>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4 searchable-item" data-search="policy jargon translator plain language faq employee guide">
+              <a class="dashboard-card card-library" href="{{ '/library/policy-translator/' | relative_url }}">
+                <span class="card-tag">Prompt</span>
+                <h3>Policy &amp; jargon translator</h3>
+                <p>Turn dense internal procedures or technical specs into plain-language guidance and FAQs.</p>
+                <div class="card-meta"><span>Comms</span><span>Clarity</span></div>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4 searchable-item" data-search="starter pack bundle copy paste prompts onboarding">
+              <a class="dashboard-card card-library" href="{{ '/library/starter-pack/' | relative_url }}">
+                <span class="card-tag">Bundle</span>
+                <h3>Office AI Starter Pack</h3>
+                <p>The essential 5-prompt quickstart bundle ready to paste into your team wiki or notes app.</p>
+                <div class="card-meta"><span>Quickstart</span><span>Bundle</span></div>
               </a>
             </div>
           </div>
@@ -194,32 +197,27 @@ layout: default
         <section class="dashboard-block">
           <div class="section-head">
             <div>
-              <h2>How the dashboard works</h2>
-              <p>A simple rhythm for learning AI at work without making the site feel noisy or blog-heavy.</p>
+              <h2>Four principles behind every playbook</h2>
+              <p>Simple rules that keep workplace AI useful, defensible, and low-stress.</p>
             </div>
           </div>
 
-          <div class="row g-3">
-            <div class="col-md-4">
-              <div class="info-card">
-                <span class="step-chip">01</span>
-                <h3>Search the task</h3>
-                <p>Start with the work you need to do, such as drafting an email, preparing a meeting, or organizing notes.</p>
-              </div>
+          <div class="principle-grid">
+            <div class="principle-item">
+              <strong>01. Sanitize before pasting</strong>
+              <span>Replace names, account IDs, and internal secrets with neutral placeholders like <code>[Client]</code> or <code>[Project]</code>.</span>
             </div>
-            <div class="col-md-4">
-              <div class="info-card">
-                <span class="step-chip">02</span>
-                <h3>Choose a guide</h3>
-                <p>Open a playbook for a full workflow or a library item for a prompt, checklist, or reusable template.</p>
-              </div>
+            <div class="principle-item">
+              <strong>02. Structure before prose</strong>
+              <span>Ask AI for outlines, checklists, and bullet extractions first—polished paragraphs come second.</span>
             </div>
-            <div class="col-md-4">
-              <div class="info-card">
-                <span class="step-chip">03</span>
-                <h3>Review the output</h3>
-                <p>Use AI to accelerate the draft, then apply human judgement, editing, and privacy checks before acting on it.</p>
-              </div>
+            <div class="principle-item">
+              <strong>03. Ban silent invention</strong>
+              <span>Every prompt explicitly instructs the model to flag missing facts rather than guess or fill gaps.</span>
+            </div>
+            <div class="principle-item">
+              <strong>04. Human sign-off always</strong>
+              <span>AI accelerates the first 70% of drafting; your judgement owns the final 30% before anything is sent.</span>
             </div>
           </div>
         </section>

@@ -1,11 +1,11 @@
-<header class="site-header border-bottom">
+<header class="site-header border-bottom sticky-top">
   <nav class="navbar navbar-expand-lg py-3">
     <div class="container-xxl align-items-center">
-      <a class="navbar-brand d-flex align-items-center gap-3 me-lg-4" href="{{ '/' | relative_url }}">
-        <img class="brand-logo" src="{{ '/assets/img/bhicon-transparent-blue.png' | relative_url }}" alt="{{ site.title }} logo">
+      <a class="navbar-brand d-flex align-items-center gap-3 me-lg-3" href="{{ '/' | relative_url }}">
+        <img class="brand-logo" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="{{ site.title }} logo">
         <span class="brand-copy">
           <strong>{{ site.title }}</strong>
-          <small>A calm dashboard for learning AI at work.</small>
+          <small>Practical AI workflows for everyday office work</small>
         </span>
       </a>
 
@@ -14,22 +14,54 @@
       </button>
 
       <div class="collapse navbar-collapse" id="topNav">
-        <!--
         <div class="top-search-wrap mx-lg-auto my-3 my-lg-0">
           <label class="search-shell" for="globalSearchInput">
-            <i class="bi bi-search"></i>
-            <input id="globalSearchInput" type="search" placeholder="Search playbooks, prompts, templates, and safe-use guides" autocomplete="off">
+            <i class="bi bi-search" aria-hidden="true"></i>
+            <input id="globalSearchInput" type="search" placeholder="Search workflows, prompts, email, minutes, redaction…" autocomplete="off" aria-label="Search Office AI Playbook">
+            <kbd class="search-kbd d-none d-xl-inline-flex">/</kbd>
           </label>
         </div>
-        -->
 
         <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-2 top-nav-links">
-          <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url }}">Dashboard</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{ '/playbook/' | relative_url }}">Playbooks</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{ '/library/' | relative_url }}">Prompt Library</a></li>
+          <li class="nav-item"><a class="nav-link {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link {% if page.url contains '/playbook/' %}active{% endif %}" href="{{ '/playbook/' | relative_url }}">Playbooks</a></li>
+          <li class="nav-item"><a class="nav-link {% if page.url contains '/library/' and page.url != '/library/starter-pack/' %}active{% endif %}" href="{{ '/library/' | relative_url }}">Prompt Library</a></li>
           <li class="nav-item ms-lg-2"><a class="btn btn-primary rounded-pill px-3 nav-cta" href="{{ '/library/starter-pack/' | relative_url }}">Starter Pack</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </header>
+
+<div class="offcanvas offcanvas-start sidebar-offcanvas" tabindex="-1" id="siteSidebar" aria-labelledby="siteSidebarLabel">
+  <div class="offcanvas-header border-bottom">
+    <div class="d-flex align-items-center gap-2">
+      <img class="brand-logo brand-logo-sm" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="">
+      <h2 class="offcanvas-title h5 mb-0" id="siteSidebarLabel">{{ site.title }}</h2>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body p-0">
+    <div class="sidebar-panel border-0 shadow-none rounded-0 h-100">
+      <div class="sidebar-section">
+        <div class="sidebar-label">Workspace</div>
+        <a class="sidebar-link {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}"><span>Dashboard</span><span class="soft-pill">Home</span></a>
+        <a class="sidebar-link {% if page.url contains '/playbook/' %}active{% endif %}" href="{{ '/playbook/' | relative_url }}"><span>Playbooks</span><span class="soft-pill">Guides</span></a>
+        <a class="sidebar-link {% if page.url contains '/library/' %}active{% endif %}" href="{{ '/library/' | relative_url }}"><span>Prompt Library</span><span class="soft-pill">Tools</span></a>
+        <a class="sidebar-link {% if page.url == '/library/starter-pack/' %}active{% endif %}" href="{{ '/library/starter-pack/' | relative_url }}"><span>Starter Pack</span><span class="soft-pill">Bundle</span></a>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Start here</div>
+        <a class="sidebar-link" href="{{ '/playbook/01-5-minute-daily-setup/' | relative_url }}"><span>5-minute daily setup</span><span class="soft-pill">Ep. 1</span></a>
+        <a class="sidebar-link" href="{{ '/library/redaction-checklist/' | relative_url }}"><span>Redaction checklist</span><span class="soft-pill">Policy</span></a>
+        <a class="sidebar-link" href="{{ '/library/email-rewrite/' | relative_url }}"><span>Email rewrite prompt</span><span class="soft-pill">Writing</span></a>
+      </div>
+
+      <div class="sidebar-note">
+        <strong>Calm rule</strong>
+        <p class="mb-0">Never paste confidential or identifying information into AI tools. Work from sanitized summaries, placeholders, and human review.</p>
+      </div>
+    </div>
+  </div>
+</div>

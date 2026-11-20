@@ -1,6 +1,6 @@
 ---
 title: Prompt Library
-description: Browse prompts, templates, and safe-use workflows for everyday office work.
+description: Browse copy-ready prompts, templates, and safe-use workflows for everyday office work.
 layout: default
 ---
 
@@ -11,27 +11,28 @@ layout: default
         <aside class="sidebar-panel d-none d-lg-block position-sticky top-offset">
           <div class="sidebar-section">
             <div class="sidebar-label">Library views</div>
-            <a class="sidebar-link active" href="{{ '/library/' | relative_url }}"><span>All items</span><span class="soft-pill">Index</span></a>
+            <a class="sidebar-link active" href="{{ '/library/' | relative_url }}"><span>All items</span><span class="soft-pill">9</span></a>
             <a class="sidebar-link" href="{{ '/library/starter-pack/' | relative_url }}"><span>Starter Pack</span><span class="soft-pill">Bundle</span></a>
-            <a class="sidebar-link" href="{{ '/playbook/' | relative_url }}"><span>Playbooks</span><span class="soft-pill">Guides</span></a>
+            <a class="sidebar-link" href="{{ '/playbook/' | relative_url }}"><span>Playbooks</span><span class="soft-pill">4</span></a>
             <a class="sidebar-link" href="{{ '/' | relative_url }}"><span>Dashboard</span><span class="soft-pill">Home</span></a>
           </div>
           <div class="sidebar-note">
             <strong>Library rule</strong>
-            <p class="mb-0">Prompts are starting points. Edit them to fit your context, then fact-check and review the result.</p>
+            <p class="mb-0">Prompts are starting points. Sanitize your input first, adapt the wording to your context, and verify the result.</p>
           </div>
         </aside>
       </div>
       <div class="col-lg-9 col-xl-9">
         <section class="hero-card slim-hero mb-4">
           <span class="hero-kicker">Prompt Library</span>
-          <h1 class="hero-title">Reusable prompts, templates, and safe-use guides for office work.</h1>
-          <p class="hero-text">Use the global search to find a task fast, or browse the library by writing, meetings, analysis, and policy-safe workflows.</p>
-          <div class="d-flex flex-wrap gap-2 mt-3">
-            <span class="soft-pill">Prompts</span>
-            <span class="soft-pill">Templates</span>
-            <span class="soft-pill">Workflows</span>
-            <span class="soft-pill">Privacy-aware</span>
+          <h1 class="hero-title">Reusable prompts, templates, and safe-use guides.</h1>
+          <p class="hero-text">Filter by category below or use the top search bar to find the right tool for writing, meetings, analysis, or privacy checks.</p>
+          <div class="filter-pills mt-3" role="group" aria-label="Filter library items by category">
+            <button type="button" class="filter-pill active" data-filter-btn="all">All (9)</button>
+            <button type="button" class="filter-pill" data-filter-btn="writing">Writing</button>
+            <button type="button" class="filter-pill" data-filter-btn="meetings">Meetings</button>
+            <button type="button" class="filter-pill" data-filter-btn="policy-safe">Policy-safe</button>
+            <button type="button" class="filter-pill" data-filter-btn="analysis">Analysis &amp; Ops</button>
           </div>
         </section>
 
@@ -39,12 +40,12 @@ layout: default
           <div class="section-head">
             <div>
               <h2>Library items</h2>
-              <p>Search from the top bar or browse the full set below.</p>
+              <p>Click any card to open the full prompt, usage guide, and quality checklist.</p>
             </div>
           </div>
 
           <div class="row g-3 searchable-grid">
-            <div class="col-md-6 col-xl-4 searchable-item" data-search="email rewrite prompt tone clarity writing concise detailed">
+            <div class="col-md-6 col-xl-4 searchable-item" data-category="writing" data-search="email rewrite prompt tone clarity writing concise detailed">
               <a class="dashboard-card card-library" href="{{ '/library/email-rewrite/' | relative_url }}">
                 <span class="card-tag">Prompt</span>
                 <h3>Email rewrite: warm-professional, no drift</h3>
@@ -52,7 +53,7 @@ layout: default
                 <div class="card-meta"><span>Writing</span><span>Core</span></div>
               </a>
             </div>
-            <div class="col-md-6 col-xl-4 searchable-item" data-search="meeting minutes template actions decisions meetings notes">
+            <div class="col-md-6 col-xl-4 searchable-item" data-category="meetings" data-search="meeting minutes template actions decisions meetings notes">
               <a class="dashboard-card card-library" href="{{ '/library/meeting-minutes/' | relative_url }}">
                 <span class="card-tag">Template</span>
                 <h3>Meeting minutes: decisions and actions</h3>
@@ -60,15 +61,15 @@ layout: default
                 <div class="card-meta"><span>Meetings</span><span>Core</span></div>
               </a>
             </div>
-            <div class="col-md-6 col-xl-4 searchable-item" data-search="redaction checklist confidential privacy data security policy">
+            <div class="col-md-6 col-xl-4 searchable-item" data-category="policy-safe" data-search="redaction checklist confidential privacy data security policy">
               <a class="dashboard-card card-library" href="{{ '/library/redaction-checklist/' | relative_url }}">
                 <span class="card-tag">Guide</span>
                 <h3>Redaction checklist</h3>
-                <p>Identify what should stay out of AI tools and how to summarize more safely.</p>
+                <p>Identify what should stay out of AI tools and how to sanitize sensitive text safely.</p>
                 <div class="card-meta"><span>Policy-safe</span><span>Core</span></div>
               </a>
             </div>
-            <div class="col-md-6 col-xl-4 searchable-item" data-search="safe summary workflow summarize document privacy risk">
+            <div class="col-md-6 col-xl-4 searchable-item" data-category="policy-safe" data-search="safe summary workflow summarize document privacy risk">
               <a class="dashboard-card card-library" href="{{ '/library/safe-summary/' | relative_url }}">
                 <span class="card-tag">Workflow</span>
                 <h3>Summarize a document safely</h3>
@@ -76,15 +77,15 @@ layout: default
                 <div class="card-meta"><span>Policy-safe</span><span>Core</span></div>
               </a>
             </div>
-            <div class="col-md-6 col-xl-4 searchable-item" data-search="decision record template analysis rationale options">
+            <div class="col-md-6 col-xl-4 searchable-item" data-category="analysis" data-search="decision record template analysis rationale options tradeoffs">
               <a class="dashboard-card card-library" href="{{ '/library/decision-record/' | relative_url }}">
                 <span class="card-tag">Template</span>
                 <h3>Decision record template</h3>
-                <p>Capture why a decision was made so future teams can understand the reasoning.</p>
+                <p>Capture why a decision was made so future teams can understand the options and reasoning.</p>
                 <div class="card-meta"><span>Analysis</span><span>Core</span></div>
               </a>
             </div>
-            <div class="col-md-6 col-xl-4 searchable-item" data-search="report outline generator writing notes structure">
+            <div class="col-md-6 col-xl-4 searchable-item" data-category="writing" data-search="report outline generator writing notes structure briefing">
               <a class="dashboard-card card-library" href="{{ '/library/report-outline/' | relative_url }}">
                 <span class="card-tag">Workflow</span>
                 <h3>Report outline generator</h3>
@@ -92,12 +93,28 @@ layout: default
                 <div class="card-meta"><span>Writing</span><span>Core</span></div>
               </a>
             </div>
-            <div class="col-md-6 col-xl-4 searchable-item" data-search="starter pack bundle download prompts templates">
+            <div class="col-md-6 col-xl-4 searchable-item" data-category="analysis" data-search="weekly status update progress blockers stakeholder summary">
+              <a class="dashboard-card card-library" href="{{ '/library/status-update/' | relative_url }}">
+                <span class="card-tag">Prompt</span>
+                <h3>Weekly status update</h3>
+                <p>Turn raw task notes into a scannable progress, risks, and next-steps update.</p>
+                <div class="card-meta"><span>Operations</span><span>Reusable</span></div>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4 searchable-item" data-category="writing" data-search="policy jargon translator plain language faq guide">
+              <a class="dashboard-card card-library" href="{{ '/library/policy-translator/' | relative_url }}">
+                <span class="card-tag">Prompt</span>
+                <h3>Policy &amp; jargon translator</h3>
+                <p>Translate dense policy text or technical notes into plain-language guidance and FAQs.</p>
+                <div class="card-meta"><span>Writing</span><span>Clarity</span></div>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4 searchable-item" data-category="policy-safe" data-search="starter pack bundle download prompts templates onboarding">
               <a class="dashboard-card card-library" href="{{ '/library/starter-pack/' | relative_url }}">
                 <span class="card-tag">Bundle</span>
-                <h3>Starter Pack</h3>
-                <p>A small set of practical prompts and templates to help teams adopt AI more calmly.</p>
-                <div class="card-meta"><span>Downloads</span><span>Bundle</span></div>
+                <h3>Office AI Starter Pack</h3>
+                <p>A copy-ready bundle of core prompts and guardrails to help teams adopt AI calmly.</p>
+                <div class="card-meta"><span>Quickstart</span><span>Bundle</span></div>
               </a>
             </div>
           </div>

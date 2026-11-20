@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Playbooks
-description: Office-ready AI workflows you can reuse.
+description: Office-ready AI workflows you can reuse every week.
 ---
 
 <main class="dashboard-shell py-4 py-lg-5">
@@ -11,13 +11,14 @@ description: Office-ready AI workflows you can reuse.
         <aside class="sidebar-panel d-none d-lg-block position-sticky top-offset">
           <div class="sidebar-section">
             <div class="sidebar-label">Playbook views</div>
-            <a class="sidebar-link active" href="{{ '/playbook/' | relative_url }}"><span>All episodes</span><span class="soft-pill">Index</span></a>
-            <a class="sidebar-link" href="{{ '/library/' | relative_url }}"><span>Prompt Library</span><span class="soft-pill">Tools</span></a>
+            <a class="sidebar-link active" href="{{ '/playbook/' | relative_url }}"><span>All episodes</span><span class="soft-pill">4</span></a>
+            <a class="sidebar-link" href="{{ '/library/' | relative_url }}"><span>Prompt Library</span><span class="soft-pill">9</span></a>
+            <a class="sidebar-link" href="{{ '/library/starter-pack/' | relative_url }}"><span>Starter Pack</span><span class="soft-pill">Bundle</span></a>
             <a class="sidebar-link" href="{{ '/' | relative_url }}"><span>Dashboard</span><span class="soft-pill">Home</span></a>
           </div>
           <div class="sidebar-note">
             <strong>Playbook rule</strong>
-            <p class="mb-0">Use playbooks for repeatable processes. Start with a workflow, then support it with a prompt or template from the library.</p>
+            <p class="mb-0">Use playbooks for repeatable processes. Start with a workflow, then pair it with a prompt or template from the library.</p>
           </div>
         </aside>
       </div>
@@ -25,10 +26,10 @@ description: Office-ready AI workflows you can reuse.
         <section class="hero-card slim-hero mb-4">
           <span class="hero-kicker">Playbooks</span>
           <h1 class="hero-title">Office-ready AI workflows you can reuse.</h1>
-          <p class="hero-text">Each episode is designed to feel more like an operating guide than a blog post: practical, repeatable, and grounded in human review.</p>
+          <p class="hero-text">Each episode reads like a concise operating guide rather than a hype-filled blog post: clear steps, safe boundaries, and a copy-ready prompt.</p>
           <div class="d-flex flex-wrap gap-2 mt-3">
             <span class="soft-pill">Workflow-first</span>
-            <span class="soft-pill">LinkedIn series</span>
+            <span class="soft-pill">Repeatable routines</span>
             <span class="soft-pill">Privacy-aware</span>
           </div>
         </section>
@@ -43,11 +44,11 @@ description: Office-ready AI workflows you can reuse.
 
           <div class="row g-3 searchable-grid">
             {% assign pb = site.pages | where_exp: "p","p.url contains '/playbook/'" %}
-            {% assign episodes = pb | where_exp: "p","p.episode" | sort: "episode" | reverse %}
+            {% assign episodes = pb | where_exp: "p","p.episode" | sort: "episode" %}
             {% for post in episodes %}
-            <div class="col-md-6 col-xl-6 searchable-item" data-search="{{ post.title | downcase }} {{ post.subtitle | strip_html | downcase }} {{ post.category | downcase }} office ai playbook workflow">
+            <div class="col-md-6 searchable-item" data-search="{{ post.title | downcase }} {{ post.subtitle | strip_html | downcase }} {{ post.category | downcase }} office ai playbook workflow episode {{ post.episode }}">
               <a class="dashboard-card card-playbook" href="{{ post.url | relative_url }}">
-                <span class="card-tag">Episode {{ post.episode }}</span>
+                <span class="card-tag">Episode 0{{ post.episode }}</span>
                 <h3>{{ post.title }}</h3>
                 <p>{{ post.subtitle | default: post.description }}</p>
                 <div class="card-meta">

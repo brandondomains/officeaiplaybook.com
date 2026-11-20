@@ -1,9 +1,9 @@
 ---
 title: Report outline generator
-description: Moves scattered notes into a logical outline that reads like a decision document.
+description: Moves scattered notes into a logical outline that reads like a clear decision document.
 layout: item
 category: Writing
-subtitle: Moves scattered notes into a logical outline that reads like a decision document.
+subtitle: Moves scattered notes into a logical outline that reads like a clear decision document.
 time: 10 min
 level: Practical
 tag: Workflow
@@ -11,44 +11,45 @@ related:
   - label: Decision record template
     tag: Analysis
     url: /library/decision-record/
-  - label: Email rewrite prompt
-    tag: Writing
-    url: /library/email-rewrite/
   - label: Safe summary workflow
     tag: Policy
     url: /library/safe-summary/
+  - label: Policy & jargon translator
+    tag: Writing
+    url: /library/policy-translator/
 ---
 ## When to use
 
-Use this before writing a report, briefing note, or internal memo. It’s a fast way to impose structure.
+Use this before writing a briefing note, project retrospective, or internal proposal. Locking the outline first keeps drafting fast and focused.
+
 ## Prompt
 
-Paste your rough notes (sanitized if needed) and request an outline plus questions to confirm.
+Paste your sanitized notes and request a structured outline plus missing-information questions.
 
 <div class="codebox">
   <div class="codebar">
-    <strong style="font-size:13px;">Outline prompt</strong>
-    <button class="btn" data-copy="#code-outline">Copy</button>
+    <strong>Report outline prompt</strong>
+    <button type="button" data-copy="#code-outline"><i class="bi bi-clipboard"></i> Copy</button>
   </div>
-  <pre id="code-outline">Create a report outline from these notes.
+  <pre id="code-outline">Create a structured report outline from these sanitized notes.
 
 Rules:
-- Do not invent facts.
-- Keep headings descriptive.
-- End with “Questions to confirm” if information is missing.
+- Do not invent facts, metrics, or conclusions.
+- Keep section headings descriptive and action-oriented.
+- End with "Questions to confirm" for any gaps in the notes.
 
-Output:
-- Title
-- Executive summary (3–5 bullets)
-- Background
-- Findings (grouped)
-- Options (if applicable)
-- Recommendation (if applicable)
-- Appendix: source notes
+Output structure:
+- Working Title
+- Executive Summary (3–5 key takeaways)
+- Background & Scope
+- Key Findings (grouped logically)
+- Options & Tradeoffs (if applicable)
+- Recommended Next Steps (if supported by notes)
+- Questions to Confirm
 
-NOTES:
+SANITIZED NOTES:
 [PASTE HERE]</pre>
 </div>
-## Next step
 
-Draft one section at a time. Keep a “facts only” pass separate from “recommendation” wording.
+## Next step
+Review and reorder the headings yourself, then draft one section at a time so facts stay separate from recommendations.

@@ -3,7 +3,7 @@ layout: playbook
 title: "The 5-Minute Daily Setup"
 subtitle: "What to ask AI every morning so your day starts with clarity, priorities, and ready-to-use templates."
 episode: 1
-read_time: "4–6 min"
+read_time: "5 min"
 category: "Daily workflow"
 tagline: "Repeatable habit"
 supporting_library:
@@ -18,76 +18,58 @@ supporting_library:
     tag: "Policy"
 ---
 
-Most office workers don't need "AI skills."
+Most office workers don't need "prompt engineering." They need a calm, repeatable morning routine that lowers decision fatigue before the inbox takes over.
 
-They need a repeatable workflow that reduces mental load.
+This 5-minute setup turns a scattered list of meetings, messages, and open tasks into a prioritized plan and ready-to-adapt message templates.
 
-Here's a simple daily setup you can use that takes 5 minutes and makes the rest of the day smoother.
-
-The goal is to start the day with clarity, priorities and ready-to-use templates.
-
-**Important note:** never paste confidential or private information into AI tools. Use high-level summaries only.
+> **Privacy boundary:** Never paste confidential names, client records, or internal credentials into AI tools. Use role labels and placeholders (`[Client]`, `[Project]`, `[Deadline]`).
 
 ## The 5-Minute Daily AI Setup
 
-### Step 1 (60 seconds): Dump your context
-Paste in:
+### Step 1 (60 seconds): Dump your sanitized context
+Gather three short inputs:
+- Today's meetings (times and general topics)
+- Sanitized urgent messages (high-level summaries without personal identifiers)
+- Tasks already on your list
 
-- today's meetings (from calendar)
-- sanitized urgent emails or threads (high-level summaries, no names or identifiers)
-- tasks you already know you need to do
+### Step 2 (60 seconds): Define what "done" looks like
+State the single outcome that would make today a solid workday for your role.
 
-### Step 2 (60 seconds): Define the outcome
-Tell AI what a "successful day" looks like for your role.
+### Step 3 (60 seconds): Separate urgency from impact
+Have AI rank your top 3 priorities and explicitly list what can wait until tomorrow.
 
-### Step 3 (60 seconds): Ask for priorities
-Have AI rank what matters most, not what feels loudest.
+### Step 4 (60 seconds): Spot bottlenecks early
+Ask where back-to-back meetings, missing approvals, or unclear dependencies could derail your afternoon.
 
-### Step 4 (60 seconds): Identify risks
-Ask: what could derail today?
+### Step 5 (60 seconds): Generate starter drafts
+Have AI prepare placeholder templates for your two highest-priority messages and a brief agenda for your first meeting.
 
-### Step 5 (60 seconds): Generate quick drafts
-Have it draft:
-
-- 2 key emails (generic placeholders)
-- 1 update message (Teams/Slack style)
-- 1 short agenda for your first meeting
-
-That's it.
-
-Now your day isn't starting from scratch.
-
-## Example
-If your day looks busy, you'll write:
-
-> "Help me plan today. Prioritize what I should do first, what I should defer and what I should delegate. Include draft replies for the two most important messages using placeholders only."
-
-## Copy/Paste Prompt (Reusable Daily Prompt)
+## Copy/Paste Prompt (Reusable Daily Setup)
 
 ```text
-You are my AI work assistant helping me plan my day.
+You are my AI work assistant helping me plan my workday.
 
-I'm going to paste my schedule and key messages below.
-NOTE: This content is sanitized. No confidential or identifying information is included.
+I am pasting my sanitized schedule, tasks, and key message summaries below.
+NOTE: No confidential or identifying information is included.
 
 Your job:
-1) Identify my top 3 priorities for today (urgency + impact).
-2) Identify what I should NOT do today (low value or deferrable tasks).
-3) Flag any risks or bottlenecks that could derail my day.
-4) Build a realistic time-block plan for the day.
-5) Draft templates for 2 messages I need today:
- - one e-mail reply template (with placeholders).
- - one internal update (Teams/Slack style).
+1) Identify my top 3 priorities for today (ranked by impact and urgency).
+2) List what I should defer or decline today to protect focus time.
+3) Flag potential scheduling bottlenecks, missing inputs, or risks.
+4) Propose a realistic time-block outline around my existing meetings.
+5) Draft 2 starter templates using placeholders ([Client], [Project], [Deadline], [Owner]):
+   - One concise email reply template
+   - One brief internal status update (Teams/Slack style)
 
 Constraints:
-- Keep it practical.
-- Assume I have limited time.
-- Use placeholders like [Client], [File], [Deadline], [Team], [Decision].
+- Keep recommendations practical and concise.
+- Do not invent deadlines or commitments not stated below.
 
-Here is my schedule + context:
-[PASTE HERE]
+Here is my context for today:
+[PASTE SANITIZED SCHEDULE & NOTES HERE]
 ```
 
-If you're using AI at work, this is the habit that gives you the biggest return.
+## Review before acting
+Check your generated schedule against real calendar constraints, fill in actual names locally inside your email client, and send only after verifying commitments.
 
-**Next up in The Office AI Playbook:** How to Use AI to Write Emails Faster (Without Sounding Like a Bot).
+**Next episode:** [Episode 02 — Email Faster, Still Human]({{ '/playbook/02-email-faster-still-human/' | relative_url }}).

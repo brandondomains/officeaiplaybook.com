@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="oapGrad" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="55%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="oapPage" x1="18" y1="18" x2="46" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E0F2FE"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#oapGrad)"/>
+  <!-- Open handbook pages -->
+  <path d="M17 22.5C17 20.8431 18.3431 19.5 20 19.5H29.5C30.8807 19.5 32 20.6193 32 22V43.5C32 42.3954 31.1046 41.5 30 41.5H20C18.3431 41.5 17 40.1569 17 38.5V22.5Z" fill="url(#oapPage)" fill-opacity="0.96"/>
+  <path d="M47 22.5C47 20.8431 45.6569 19.5 44 19.5H34.5C33.1193 19.5 32 20.6193 32 22V43.5C32 42.3954 32.8954 41.5 34 41.5H44C45.6569 41.5 47 40.1569 47 38.5V22.5Z" fill="url(#oapPage)" fill-opacity="0.88"/>
+  <!-- Structured lines on left page -->
+  <rect x="20.5" y="24.5" width="8" height="2" rx="1" fill="#2563EB" fill-opacity="0.75"/>
+  <rect x="20.5" y="29" width="6.5" height="2" rx="1" fill="#2563EB" fill-opacity="0.45"/>
+  <rect x="20.5" y="33.5" width="7.5" height="2" rx="1" fill="#2563EB" fill-opacity="0.45"/>
+  <!-- Calm AI spark on right page -->
+  <path d="M40.2 24.2L41.2 27.3L44.3 28.3L41.2 29.3L40.2 32.4L39.2 29.3L36.1 28.3L39.2 27.3L40.2 24.2Z" fill="#0284C7"/>
+  <rect x="35.8" y="34.5" width="8" height="2" rx="1" fill="#2563EB" fill-opacity="0.45"/>
+</svg>

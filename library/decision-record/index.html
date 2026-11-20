@@ -1,9 +1,9 @@
 ---
 title: Decision record template
-description: Captures the why, options, and tradeoffs so decisions remain readable later.
+description: Captures the context, options, and tradeoffs so decisions remain readable months later.
 layout: item
 category: Analysis
-subtitle: Captures the why, options, and tradeoffs so decisions remain readable later.
+subtitle: Captures the context, options, and tradeoffs so decisions remain readable months later.
 time: 12 min
 level: Practical
 tag: Template
@@ -20,47 +20,50 @@ related:
 ---
 ## When to use
 
-Use this for decisions that will be revisited: process changes, tool selection, policy interpretations, or roadmap choices.
+Use this for decisions that teammates or auditors will revisit later: process updates, software selection, policy interpretations, or project scope changes.
+
 ## Template
 
-Fill this in with facts you know. If you ask AI to draft it, verify every claim.
+Fill this in with verified facts. If you ask AI to structure rough notes into this format, check every option and tradeoff yourself.
 
 <div class="codebox">
   <div class="codebar">
-    <strong style="font-size:13px;">Decision record template</strong>
-    <button class="btn" data-copy="#code-decision">Copy</button>
+    <strong>Decision record template</strong>
+    <button type="button" data-copy="#code-decision"><i class="bi bi-clipboard"></i> Copy</button>
   </div>
   <pre id="code-decision">Decision Record
 
 Title:
 Date:
-Owner:
-Audience:
+Decision Owner:
+Consulted / Stakeholders:
+Status: [Proposed / Approved / Superseded]
 
 Context:
-- What problem are we solving?
+- What problem or question are we addressing?
 
 Options considered:
-1)
-2)
-3)
+1) Option A — [Brief description]
+2) Option B — [Brief description]
+3) Option C — [Brief description]
 
 Decision:
-- What are we doing?
+- Which option was selected?
 
 Rationale:
-- Why this option?
+- Why does this option best fit our constraints?
 
 Tradeoffs:
-- What we gain / what we give up
+- What we gain:
+- What we accept or give up:
 
 Risks & mitigations:
 - Risk:
   Mitigation:
 
 Next steps:
-- Action / Owner / Due date</pre>
+- Action / Single Owner / Due date</pre>
 </div>
-## Common failure mode
 
-Records fail when they skip options and tradeoffs. Those sections are what make the record useful later.
+## Common failure mode
+Decision records lose their value when they omit **Options considered** and **Tradeoffs**. Those two sections prevent teams from re-litigating the same debate six months later.

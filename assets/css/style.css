@@ -445,3 +445,19 @@ a:hover { color: #1d4ed8; }
     justify-self: end;
   }
 }
+
+
+.top-offset { top: 5.75rem; }
+.nav-link.active {
+  color: var(--brand) !important;
+  font-weight: 600;
+}
+.search-kbd {
+  font-size: 0.72rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+  background: var(--surface-muted);
+  color: var(--text-faint);
+  border: 1px solid var(--line-strong);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}

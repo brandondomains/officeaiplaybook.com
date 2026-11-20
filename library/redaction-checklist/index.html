@@ -1,9 +1,9 @@
 ---
-title: Redaction checklist: what not to paste into AI
-description: A quick boundary list and a safe way to summarize sensitive text.
+title: "Redaction checklist: what not to paste into AI"
+description: A quick boundary list and a safe pattern for summarizing sensitive text.
 layout: item
 category: Policy-safe
-subtitle: A quick boundary list and a safe way to summarize sensitive text.
+subtitle: A quick boundary list and a safe pattern for summarizing sensitive text.
 time: 6 min
 level: Practical
 tag: Checklist
@@ -18,32 +18,35 @@ related:
     tag: Writing
     url: /library/email-rewrite/
 ---
-## What to remove
+## What to remove before pasting
 
-This is a practical boundary list. If your workplace has stricter rules, follow them.
+Use this boundary checklist before placing workplace text into any AI tool. Always follow stricter internal IT or compliance policies where applicable.
 
 <div class="codebox">
   <div class="codebar">
-    <strong style="font-size:13px;">Redaction + safe summary template</strong>
-    <button class="btn" data-copy="#code-redact">Copy</button>
+    <strong>Redaction + safe prompt pattern</strong>
+    <button type="button" data-copy="#code-redact"><i class="bi bi-clipboard"></i> Copy</button>
   </div>
   <pre id="code-redact">Before using AI, remove or replace:
-- Names, emails, phone numbers, addresses
-- Client/patient identifiers and account numbers
-- Internal IDs, credentials, tokens, secrets
-- Confidential financials not meant for sharing
-- Anything covered by policy or NDA
+- Full names, email addresses, phone numbers, and street addresses
+- Client, customer, student, or patient identifiers and account numbers
+- Internal IDs, API keys, passwords, tokens, and private URLs
+- Non-public financial figures, salaries, or legal/HR case details
+- Anything restricted by NDA, procurement rules, or privacy policy
 
-Then summarize like this:
+Replace with neutral placeholders:
+- [Client A], [Vendor B], [Manager], [Project X], [Date], [Amount]
+
+Then structure your prompt like this:
 Context (safe):
-- [What this is]
+- [High-level purpose of the task]
 Goal:
-- [What you need]
+- [Exact output format needed]
 Constraints:
-- [Rules, deadlines, tone]
+- [Rules, tone, word limit, no invention]
 Input excerpt (sanitized):
-- [Non-sensitive excerpt]</pre>
+- [Minimum non-sensitive excerpt needed]</pre>
 </div>
-## A safer pattern
 
-Instead of pasting the whole document, describe the goal and provide only the minimum sanitized excerpt needed.
+## A safer habit
+Instead of pasting an entire 20-page document, describe the outcome you need and paste only the minimum sanitized section required for that step.

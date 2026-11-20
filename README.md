@@ -1,30 +1,31 @@
-# Office AI Playbook — Jekyll Theme (Dashboard + Item Pages)
+# Office AI Playbook (`officeaiplaybook.com`)
 
-[![Support Open Work](https://img.shields.io/badge/Support-Open%20Work-0A0A0A?style=flat&logo=github)](https://github.com/brandonhimpfen/support) 
-[![GitHub Sponsor](https://srv-cdn.himpfen.io/badges/github/github-flat.svg)](https://github.com/sponsors/brandonhimpfen) 
-[![Buy Me a Coffee](https://srv-cdn.himpfen.io/badges/buymeacoffee/buymeacoffee-flat.svg)](https://buymeacoffee.com/brandonhimpfen) 
-[![Ko-Fi](https://srv-cdn.himpfen.io/badges/kofi/kofi-flat.svg)](https://ko-fi.com/brandonhimpfen) 
-[![PayPal](https://srv-cdn.himpfen.io/badges/paypal/paypal-flat.svg)](https://paypal.me/brandonhimpfen)
+Practical, calm, handbook-style AI workflows, reusable prompts, and privacy-first templates for everyday office work.
 
-This theme includes:
-- Dashboard-style homepage
-- Library index page
-- Individual item pages (the homepage cards link to these)
+## What's Included
 
-## Run locally
+- **Standalone Brand Identity**: Custom geometric book/spark SVG logo (`assets/img/logo.svg`), favicon (`assets/img/favicon.svg`), and OG social preview graphic (`assets/img/og-card.svg`) built specifically for `officeaiplaybook.com`.
+- **Dashboard Homepage (`index.html`)**: Live client-side search, category filtering, mobile offcanvas navigation, and quick-access cards across playbooks and the prompt library.
+- **4 Complete Playbook Episodes (`playbook/`)**:
+  1. `01-5-minute-daily-setup` — Morning triage, prioritization, and draft-ready templates.
+  2. `02-email-faster-still-human` — Drafting replies, managing difficult threads, and tone calibration without sounding robotic.
+  3. `03-meeting-prep-and-summaries` — Agenda building, note synthesis, decision extraction, and follow-up tracking.
+  4. `04-turning-notes-into-reports` — Moving from scattered research and raw notes to structured briefing memos.
+- **9 Prompt Library Tools & Guides (`library/`)**:
+  - One-click **Copy** buttons on every prompt and template block.
+  - Includes Email Rewrite, Meeting Minutes, Redaction Checklist, Safe Summary, Decision Record, Report Outline Generator, Weekly Status Update, Policy & Jargon Translator, and the downloadable/copy-ready Starter Pack.
+
+## Run Locally
 
 ```bash
 bundle install
 bundle exec jekyll serve
 ```
 
-Open: http://localhost:4000
+Open `http://localhost:4000` in your browser.
 
-## Where to edit
+## Customizing & Adding Content
 
-- Homepage: `index.html`
-- Library index: `library/index.html`
-- Item pages: `library/<slug>/index.html`
-- Layouts: `_layouts/default.html`, `_layouts/item.html`
-- Styles: `assets/css/style.css`
-- Scripts: `assets/js/main.js`
+- **Add a Playbook Episode**: Create `playbook/05-your-slug/index.md` using `layout: playbook` and increment `episode: 5`. It will appear automatically on `/playbook/`.
+- **Add a Library Item**: Create `library/your-slug/index.md` using `layout: item`.
+- **Branding & Colors**: Edit CSS variables in `assets/css/style.css` and vector marks in `assets/img/`.

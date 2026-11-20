@@ -1,52 +1,53 @@
 ---
 title: Summarize a document safely
-description: A structured summary method that avoids identifiers and asks you to verify.
+description: A structured summary method that avoids identifiers and prompts you to verify key claims.
 layout: item
 category: Policy-safe
-subtitle: A structured summary method that avoids identifiers and asks you to verify.
+subtitle: A structured summary method that avoids identifiers and prompts you to verify key claims.
 time: 8 min
 level: Practical
 tag: Workflow
 related:
+  - label: Redaction checklist
+    tag: Policy
+    url: /library/redaction-checklist/
   - label: Meeting minutes template
     tag: Meetings
     url: /library/meeting-minutes/
-  - label: Safe summary workflow
-    tag: Policy
-    url: /library/safe-summary/
   - label: Decision record template
     tag: Analysis
     url: /library/decision-record/
 ---
 ## When to use
 
-Use this for policies, memos, reports, or long threads when you want a clean summary without copying sensitive details.
+Use this for policies, memos, reports, or long email threads when you want a clean executive overview without exposing confidential details.
+
 ## Prompt
 
-Use the prompt below after sanitizing the text. The output includes a verification step.
+Run the text through the [Redaction checklist]({{ '/library/redaction-checklist/' | relative_url }}) first, then use the prompt below.
 
 <div class="codebox">
   <div class="codebar">
-    <strong style="font-size:13px;">Safe summary prompt</strong>
-    <button class="btn" data-copy="#code-safe-summary">Copy</button>
+    <strong>Safe summary prompt</strong>
+    <button type="button" data-copy="#code-safe-summary"><i class="bi bi-clipboard"></i> Copy</button>
   </div>
-  <pre id="code-safe-summary">Summarize this document safely.
+  <pre id="code-safe-summary">Summarize this sanitized document safely.
 
 Rules:
-- Do not include identifiers, names, or sensitive details.
-- If something is uncertain, say so.
-- Output should be useful for a coworker who hasn't read it.
+- Do not include or guess personal names, identifiers, or confidential details.
+- Distinguish clearly between confirmed facts and open questions.
+- If a requirement or deadline is ambiguous, flag it explicitly.
 
 Provide:
-1) 5-line overview
-2) Key points (facts only)
-3) Decisions / requirements (if present)
-4) Risks / open questions
-5) What I should verify
+1) 5-line overview for a busy colleague
+2) Key facts (bullets only)
+3) Decisions or mandatory requirements (if present)
+4) Risks, dependencies, or open questions
+5) What I should verify in the original document
 
 SANITIZED TEXT:
 [PASTE HERE]</pre>
 </div>
-## Review step
 
-Compare the summary against the original for nuance, especially around requirements and dates.
+## Review step
+Compare section 3 ("Decisions or mandatory requirements") and section 5 ("What I should verify") directly against the original source before sharing.
